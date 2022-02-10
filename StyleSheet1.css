@@ -19,3 +19,21 @@ body {
     padding: 25px;
     border-radius: 10px;
 }
+
+.text {
+    font-family: 'Gluten', cursive;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    height: 140px;
+    padding: 5px;
+}
+
+#author {
+    font-size: 18px;
+    font-family: 'Gluten', cursive;
+    font-weight: 200;
+    height: 40px;
+    padding: 5px;
+    margin-left: 50%;
+}
