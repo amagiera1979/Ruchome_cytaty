@@ -1,3 +1,21 @@
-﻿body
-{
+﻿@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@200;400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+
+body {
+    background-color:#888;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#container {
+    background-color: #fff;
+    height: 250px;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20vw;
+    padding: 25px;
+    border-radius: 10px;
 }
