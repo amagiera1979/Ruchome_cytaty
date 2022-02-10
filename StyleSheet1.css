@@ -52,3 +52,10 @@ body {
     width: 100px;
     font-size: 14px;
 }
+
+#tweet-quote {
+    font-size: 27px;
+    display: block;
+    padding: 1px;
+    color: #fff;
+}
