@@ -20,6 +20,8 @@ function getMyQuote() {
 
     currentQuote = myQuote.quote;
     currentAuthor = myQuote.author;
+
+    
 }
 
 $(document).ready(function () {
