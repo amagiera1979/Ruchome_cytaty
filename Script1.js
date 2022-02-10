@@ -10,7 +10,11 @@ const quotes = [
 
 const colors = [
     '#ff8080',
-    '#c299ff'
+    '#c299ff',
+    '#ff884d',
+    '#85e0e0',
+    '#66cc00',
+    '#339966'
 ];
 
 var currentQuote = '';
