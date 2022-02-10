@@ -21,7 +21,21 @@ function getMyQuote() {
     currentQuote = myQuote.quote;
     currentAuthor = myQuote.author;
 
-    
+    $("#text").animate({ opacity: 0 }, 200, function () {
+        $(this).animate({ opacity: 1 }, 200);
+    });
+
+    $("#text").fadeIn(200, function () {
+        $(this).text(currentQuote);
+    });
+
+    $("#author").animate({ opacity: 0 }, 200, function () {
+        $(this).animate({ opacity: 1 }, 200);
+    });
+
+    $(".text_author").fadeIn(200, function () {
+        $(this).text(currentAuthor);
+    });
 }
 
 $(document).ready(function () {
