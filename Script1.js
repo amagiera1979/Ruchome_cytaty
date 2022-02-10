@@ -8,8 +8,14 @@ const quotes = [
     { "quote": "Je¿eli robisz to co ³atwe, Twoje ¿ycie bêdzie trudne. Jeœli robisz to co trudne, Twoje ¿ycie bêdzie ³atwe.", "author": "Les Brown" }
 ];
 
+const colors = [
+    '#ff8080',
+    '#c299ff'
+];
+
 var currentQuote = '';
 var currentAuthor = '';
+var currentColor = '';
 
 function getRandomQuote() {
     return quotes[Math.floor(Math.random() * quotes.length)];
@@ -36,6 +42,12 @@ function getMyQuote() {
     $(".text_author").fadeIn(200, function () {
         $(this).text(currentAuthor);
     });
+
+    currentColor = colors[Math.floor(Math.random() * colors.length)];
+
+    $('body').css('backgroundColor', currentColor);
+    $('.color').css('backgroundColor', currentColor);
+    $('.text').css('color', currentColor);
 }
 
 $(document).ready(function () {
