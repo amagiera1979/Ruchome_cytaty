@@ -40,5 +40,6 @@ function getMyQuote() {
 
 $(document).ready(function () {
     getMyQuote();
+    $('#new-quote').on('click', getMyQuote);
 });
 
