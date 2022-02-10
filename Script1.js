@@ -8,3 +8,21 @@ const quotes = [
     { "quote": "Je¿eli robisz to co ³atwe, Twoje ¿ycie bêdzie trudne. Jeœli robisz to co trudne, Twoje ¿ycie bêdzie ³atwe.", "author": "Les Brown" }
 ];
 
+var currentQuote = '';
+var currentAuthor = '';
+
+function getRandomQuote() {
+    return quotes[Math.floor(Math.random() * quotes.length)];
+}
+
+function getMyQuote() {
+    let myQuote = getRandomQuote();
+
+    currentQuote = myQuote.quote;
+    currentAuthor = myQuote.author;
+}
+
+$(document).ready(function () {
+    getMyQuote();
+});
+
